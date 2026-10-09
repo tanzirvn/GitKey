@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GitKey</string>
+    <string name="app_subtitle">Android Signing Key Manager</string>
+    <string name="tagline">Generate once. Sign anywhere.</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_keys">Keys</string>
+    <string name="nav_tools">Tools</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Home Screen -->
+    <string name="home_welcome_title">Create a Signing Key</string>
+    <string name="home_welcome_desc">Generate an Android keystore and GitHub Actions signing secrets in a few simple steps.</string>
+    <string name="create_new_key">Create New Key</string>
+    <string name="recent_keys_title">Recent Projects</string>
+    <string name="no_recent_keys">No recent keys created yet.</string>
+
+    <!-- Create Key Form -->
+    <string name="create_key_title">Create Signing Key</string>
+    <string name="create_key_subtitle">Enter your project information</string>
+    <string name="project_name_label">Project Name *</string>
+    <string name="project_name_hint">e.g. MyApp</string>
+    <string name="app_logo_label">App Logo (Optional)</string>
+    <string name="choose_app_logo">Choose App Logo</string>
+    <string name="change_app_logo">Change Logo</string>
+
+    <!-- Keystore Config -->
+    <string name="keystore_config_title">Keystore Configuration</string>
+    <string name="key_alias_label">Key Alias *</string>
+    <string name="key_alias_hint">e.g. myapp</string>
+    <string name="keystore_password_label">Keystore Password *</string>
+    <string name="key_password_label">Key Password *</string>
+    <string name="generate_secure_password">Generate Secure Password</string>
+    <string name="same_as_keystore_pass">Same as Keystore Password</string>
+
+    <!-- Advanced Options -->
+    <string name="advanced_options">Advanced Options</string>
+    <string name="key_algorithm_label">Key Algorithm</string>
+    <string name="key_size_label">Key Size</string>
+    <string name="validity_years_label">Certificate Validity (Years)</string>
+    <string name="common_name_label">Common Name (CN)</string>
+    <string name="organization_label">Organization (O)</string>
+    <string name="org_unit_label">Organizational Unit (OU)</string>
+    <string name="city_label">City/Locality (L)</string>
+    <string name="state_label">State/Province (ST)</string>
+    <string name="country_code_label">Country Code (C, 2-letter)</string>
+
+    <string name="build_keystore_button">BUILD KEYSTORE</string>
+
+    <!-- Generation Progress -->
+    <string name="generating_signing_key">Generating signing key…</string>
+    <string name="creating_keystore">Creating keystore…</string>
+    <string name="encoding_keystore">Encoding keystore…</string>
+    <string name="preparing_github_secrets">Preparing GitHub Secrets…</string>
+
+    <!-- Result Screen -->
+    <string name="keystore_ready_title">Keystore Ready</string>
+    <string name="keystore_ready_subtitle">Your GitHub Actions signing credentials and Firebase / Google Cloud fingerprints are ready.</string>
+    <string name="google_firebase_section_title">Google Cloud &amp; Firebase Console</string>
+    <string name="google_firebase_subtitle">Required for Google Sign-In, Firebase Auth, Google Maps, and OAuth</string>
+    <string name="sha1_fingerprint_label">SHA-1 Fingerprint</string>
+    <string name="sha256_fingerprint_label">SHA-256 Fingerprint</string>
+    <string name="md5_fingerprint_label">MD5 Fingerprint</string>
+    <string name="copy_sha1_firebase">Copy SHA-1 for Firebase / GCP</string>
+    <string name="export_options_title">Export Options</string>
+    <string name="export_folder_all">Export All Files to Folder</string>
+    <string name="export_individual_files">Download Individual Secret Files</string>
+    <string name="secret_keystore_base64">KEYSTORE_BASE64</string>
+    <string name="secret_keystore_password">KEYSTORE_PASSWORD</string>
+    <string name="secret_key_alias">KEY_ALIAS</string>
+    <string name="secret_key_password">KEY_PASSWORD</string>
+    
+    <string name="action_copy">Copy</string>
+    <string name="action_show">Show</string>
+    <string name="action_hide">Hide</string>
+    <string name="copy_all_secrets">COPY ALL SECRETS</string>
+    <string name="export_files">EXPORT FILES</string>
+    <string name="github_actions_setup">GitHub Actions Setup</string>
+    <string name="regenerate_credentials">Regenerate Credentials</string>
+
+    <string name="secrets_copied_toast">GitHub Secrets copied to clipboard</string>
+    <string name="secret_copied_toast">%s copied to clipboard</string>
+    <string name="clipboard_warning">Clipboard contents may be accessible to other apps on your device.</string>
+
+    <!-- Export Warning Dialog -->
+    <string name="sensitive_export_warning_title">Sensitive Credentials Warning</string>
+    <string name="sensitive_export_warning_message">These files contain sensitive signing credentials. Anyone who obtains them may be able to sign builds as your application. Store them securely and never commit them to public version control.</string>
+    <string name="btn_cancel">CANCEL</string>
+    <string name="btn_export">EXPORT</string>
+
+    <!-- GitHub Setup Helper -->
+    <string name="github_helper_title">GitHub Actions Setup Guide</string>
+    <string name="github_helper_step1">1. Go to your GitHub Repository Settings</string>
+    <string name="github_helper_step2">2. Navigate to: Secrets and variables → Actions</string>
+    <string name="github_helper_step3">3. Click "New repository secret" and add these 4 secrets:</string>
+    <string name="github_workflow_yaml_title">Sample GitHub Actions Workflow (.github/workflows/build.yml)</string>
+    <string name="copy_workflow_yaml">Copy Workflow YAML</string>
+
+    <!-- Tools -->
+    <string name="tools_title">Developer Utilities</string>
+    <string name="tool_base64_encode">Base64 Encoder</string>
+    <string name="tool_base64_encode_desc">Select a file and encode it to Base64 text.</string>
+    <string name="tool_base64_decode">Base64 Decoder</string>
+    <string name="tool_base64_decode_desc">Decode Base64 text back into a binary file.</string>
+    <string name="tool_sha256">SHA-256 Generator</string>
+    <string name="tool_sha256_desc">Calculate SHA-256 fingerprint for text or files.</string>
+    <string name="tool_sha1">SHA-1 Generator</string>
+    <string name="tool_sha1_desc">Calculate SHA-1 fingerprint for text or files.</string>
+    <string name="tool_md5">MD5 Generator</string>
+    <string name="tool_md5_desc">Calculate MD5 checksum for text or files.</string>
+    <string name="tool_keystore_inspector">Keystore Inspector</string>
+    <string name="tool_keystore_inspector_desc">Inspect alias, validity, and fingerprints of an existing keystore.</string>
+    <string name="tool_secrets_formatter">GitHub Secrets Formatter</string>
+    <string name="tool_secrets_formatter_desc">Paste key-value pairs and format for GitHub Actions.</string>
+    <string name="tool_json_formatter">JSON Formatter</string>
+    <string name="tool_json_formatter_desc">Beautify or minify JSON strings locally.</string>
+    <string name="tool_file_checksum">File Checksum Utility</string>
+    <string name="tool_file_checksum_desc">Generate MD5, SHA-1, and SHA-256 simultaneously for a file.</string>
+    <string name="tool_password_gen">Password Generator</string>
+    <string name="tool_password_gen_desc">Create cryptographically secure random passwords.</string>
+    <string name="tool_uuid_gen">UUID Generator</string>
+    <string name="tool_uuid_gen_desc">Generate random v4 UUIDs for developer use.</string>
+
+    <!-- Keys Screen -->
+    <string name="keys_history_title">Saved Key Metadata</string>
+    <string name="keys_history_desc">Safe local metadata for generated keystores (passwords are never stored).</string>
+    <string name="delete_metadata">Delete Metadata</string>
+    <string name="delete_metadata_confirm">Delete metadata for %s?</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_appearance">Appearance</string>
+    <string name="theme_system">System Default</string>
+    <string name="theme_light">Light Theme</string>
+    <string name="theme_dark">Dark Theme</string>
+    <string name="settings_security">Security</string>
+    <string name="pref_confirm_export">Confirm before exporting secrets</string>
+    <string name="pref_hide_secrets">Hide secrets by default on result screen</string>
+    <string name="settings_about">About GitKey</string>
+    <string name="about_version">Version 1.0.0 (Build 1)</string>
+    <string name="about_developer">Independent Developer Utility</string>
+    <string name="about_license">Open Source &amp; 100% Local / Offline</string>
+
+    <!-- Common -->
+    <string name="btn_close">Close</string>
+    <string name="btn_delete">Delete</string>
+    <string name="btn_select_file">Select File</string>
+    <string name="btn_run">Run</string>
+    <string name="error_required_fields">Please enter all required fields.</string>
+    <string name="error_invalid_input">Invalid input provided.</string>
+</resources>

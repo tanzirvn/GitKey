@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand Primary -->
+    <color name="primary">#4F46E5</color>
+    <color name="primary_variant">#4338CA</color>
+    <color name="secondary">#0284C7</color>
+    <color name="accent">#38BDF8</color>
+
+    <color name="primary_container_light">#EEF2FF</color>
+    <color name="on_primary_container_light">#312E81</color>
+    <color name="primary_container_dark">#1E1B4B</color>
+    <color name="on_primary_container_dark">#E0E7FF</color>
+
+    <!-- Light Theme Palette -->
+    <color name="background_light">#F8FAFC</color>
+    <color name="surface_light">#FFFFFF</color>
+    <color name="surface_variant_light">#F1F5F9</color>
+    <color name="text_primary_light">#0F172A</color>
+    <color name="text_secondary_light">#64748B</color>
+    <color name="border_light">#E2E8F0</color>
+
+    <!-- Dark Theme Palette -->
+    <color name="background_dark">#090D16</color>
+    <color name="surface_dark">#131B2E</color>
+    <color name="surface_variant_dark">#1E293B</color>
+    <color name="text_primary_dark">#F8FAFC</color>
+    <color name="text_secondary_dark">#94A3B8</color>
+    <color name="border_dark">#2D3B55</color>
+
+    <!-- Status Colors -->
+    <color name="success_green">#10B981</color>
+    <color name="success_bg_light">#ECFDF5</color>
+    <color name="warning_amber">#F59E0B</color>
+    <color name="error_red">#EF4444</color>
+
+    <!-- Code Block -->
+    <color name="code_bg">#0F172A</color>
+    <color name="code_border">#334155</color>
+    <color name="code_text">#38BDF8</color>
+</resources>

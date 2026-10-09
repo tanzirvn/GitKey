@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: gitkey-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    autoDeploy: true
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: PORT
+        value: "10000"
+      - key: USE_WEBHOOK
+        value: "false"
+      - key: MAX_FILE_SIZE_MB
+        value: "20"
+      - key: TEMP_FILE_LIFETIME_SEC
+        value: "1800"
+      - key: RATE_LIMIT_ACTIONS_PER_MIN
+        value: "30"
